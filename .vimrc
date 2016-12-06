@@ -18,7 +18,6 @@ NeoBundle 'Shougo/vimproc'
 NeoBundle 'Shougo/neosnippet'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'marcus/rsense'
-NeoBundle 'supermomonga/neocomplete-rsense.vim'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'Shougo/neocomplete.vim'
 " Ruby向けにendを自動挿入してくれる
@@ -85,17 +84,12 @@ let g:neocomplete#force_omni_input_patterns.ruby = '[^.*\t]\.\w*\|\h\w*::'
 "--------------------
 
 set autoindent
-"バックアップファイルのディレクトリを指定する
-set backupdir=$HOME/vimbackup
 
 "バックアップを作成しない
 set nobackup
 
 "クリップボードをMacOSXと連携する
 set clipboard=unnamed,autoselect
-  
-"スワップファイル用のディレクトリを指定する
-set directory=$HOME/vimbackup
    
 "タブの代わりに空白文字を指定する
 "set expandtab
@@ -190,9 +184,4 @@ endif
 
 syntax on
 -
-"-----------------------
-"RSenseの設定
-"----------------------
-let g:rsenseHome = "/usr/local/Cellar/rsense/0.3/libexec"
-let g:rsenseUseOmniFunc = 1
 
